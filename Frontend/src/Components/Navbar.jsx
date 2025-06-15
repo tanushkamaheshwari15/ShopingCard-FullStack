@@ -9,6 +9,10 @@ function Navbar() {
         <nav className="nav-container">
             <Link to="#" className="navbar-brand">E-Commerce.</Link>
 
+            <div className="search-bar">
+                <i className="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for Product, Brand and More" />
+            </div>
 
             <ul className="nav-items-container">
                 <li className="nav-item">
@@ -16,16 +20,25 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item">
-                    <Link to="/about" className="nav-link">About</Link>
+                    <Link to="/addproduct" className="nav-link">AddProduct</Link>
                 </li>
 
                 <li className="nav-item">
-                    <Link to="/addproduct" className="nav-link">AddProduct</Link>
+                    <Link to="/about" className="nav-link">About</Link>
                 </li>
 
                 <li className="nav-item">
                     <Link to="/contact" className="nav-link">Contact</Link>
                 </li>
+
+                <li>
+                    <Link to="/login" className="nav-link">Login</Link>
+                </li>
+
+                <div>
+                    <Link to="/cart" className="nav-link"><i class="fa-solid fa-cart-plus"></i></Link>
+                    <Link to="/myprofile" className="nav-link"><i class="fa-solid fa-user"></i></Link>
+                </div>
             </ul>
         </nav>
     )
