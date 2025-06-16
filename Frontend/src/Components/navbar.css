@@ -37,6 +37,9 @@
     font-size: 25px;
     font-weight: 700;
 }
+.navbar-brand img{
+    width: 100px;
+}
 .nav-items-container {
     display: grid;
     grid-template-columns: repeat(6, auto);

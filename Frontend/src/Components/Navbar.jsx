@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
+import "./Navbar.css";
+import image from "../assets/ECommerce.png";
 
 
 function Navbar() {
 
     return (
         <nav className="nav-container">
-            <Link to="#" className="navbar-brand">E-Commerce.</Link>
+            <Link to="#" className="navbar-brand">
+                <img src={image} alt="image" />
+            </Link>
 
             <div className="search-bar">
                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -43,4 +46,6 @@ function Navbar() {
         </nav>
     )
 }
+
+
 export default Navbar;
