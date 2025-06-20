@@ -1,0 +1,45 @@
+.login-form{
+    border: solid 2px black;
+    margin: 200px auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.login-heading{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.login-container{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.login-label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.login-input{
+    border: solid 2px gray;
+    padding: 5px;
+    border-radius: 3px;
+}
+.login-button{
+    width: 50%;
+    margin: auto;
+    color: black;
+    border: solid 2px gray;
+    font-size: 20px;
+    font-weight: 500;
+}
+.login-button:hover{
+    background-color: rgb(191, 190, 190);
+}
+.login-link{
+    text-decoration: none;
+    color: blue;
+}
+.login-link:hover{
+    color: rgb(5, 5, 135);
+}

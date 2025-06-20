@@ -3,33 +3,33 @@ import "./ProductFormData.css";
 
 function ProductFormData() {
     return (
-        <form>
-            <h1>Add Product</h1>
+        <form className="product-form">
+            <h1 className="product-heading">Add Product</h1>
             <div className="container">
                 <div>
-                    <label htmlFor="productName">Product Name:</label>
-                    <input type="text" id="productName" placeholder="Enter Product Name" />
+                    <label htmlFor="productName" className="product-label">Product Name:</label>
+                    <input type="text" id="productName" placeholder="Enter Product Name" className="product-input"/>
                 </div>
                 <div>
-                    <label htmlFor="productImage">Product Image:</label>
-                    <input type="file" id="productImage" className="product-image" />
+                    <label htmlFor="productImage" className="product-label" >Product Image:</label>
+                    <input type="file" id="productImage" className="product-image product-input"/>
                 </div>
                 <div>
-                    <label htmlFor="productCategory">Product Category:</label>
-                    <input type="text" id="productCategory" placeholder="Enter Product Category" />
+                    <label htmlFor="productCategory" className="product-label">Product Category:</label>
+                    <input type="text" id="productCategory" placeholder="Enter Product Category" className="product-input"/>
                 </div>
                 <div>
-                    <label htmlFor="productPrice">Product Price:</label>
-                    <input type="number" id="prouctPrice" placeholder="Enter Product Price" />
+                    <label htmlFor="productPrice" className="product-label">Product Price:</label>
+                    <input type="number" id="prouctPrice" placeholder="Enter Product Price" className="product-input"/>
                 </div>
 
                 <div>
-                    <label htmlFor="description">Product Description:</label>
+                    <label htmlFor="description" className="product-label">Product Description:</label>
                     <textarea id="description" placeholder="Enter Your Product Description" rows="1.5" cols="30"></textarea>
                 </div>
 
                 <div>
-                    <label htmlFor="delivery">Free Delivery:</label>
+                    <label htmlFor="delivery" className="product-label">Free Delivery:</label>
                     <select name="Delivery" id="delivery">
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
@@ -37,11 +37,11 @@ function ProductFormData() {
                 </div>
 
                 <div>
-                    <label htmlFor="ratings">Ratings:</label>
-                    <input type="number" id="ratings" placeholder="Enter Your Product Rating 1 - 5" />
+                    <label htmlFor="ratings" className="product-label">Ratings:</label>
+                    <input type="number" id="ratings" placeholder="Enter Your Product Rating 1 - 5" className="product-input"/>
                 </div>
 
-                <button>Create Product</button>
+                <button className="product-button">Create Product</button>
             </div>
 
         </form>

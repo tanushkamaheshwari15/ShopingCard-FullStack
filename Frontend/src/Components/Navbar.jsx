@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import image from "../assets/ECommerce.png";
+import image from "../assets/navImage.jpg";
 
 
 function Navbar() {
@@ -12,12 +12,17 @@ function Navbar() {
                 <img src={image} alt="image" />
             </Link>
 
+            <div className="nav-icons">
+                <i className="fa-solid fa-bars"></i>
+            </div>
+
             <div className="search-bar">
                 <i className="fa-solid fa-magnifying-glass"></i>
                 <input type="search" placeholder="Search for Product, Brand and More" />
             </div>
 
             <ul className="nav-items-container">
+
                 <li className="nav-item">
                     <Link to="/" className="nav-link">Home</Link>
                 </li>
@@ -39,8 +44,8 @@ function Navbar() {
                 </li>
 
                 <div>
-                    <Link to="/cart" className="nav-link"><i class="fa-solid fa-cart-plus"></i></Link>
-                    <Link to="/myprofile" className="nav-link"><i class="fa-solid fa-user"></i></Link>
+                    <Link to="/cart" className="nav-link"><i className="fa-solid fa-cart-plus"></i></Link>
+                    <Link to="/myprofile" className="nav-link"><i className="fa-solid fa-user"></i></Link>
                 </div>
             </ul>
         </nav>

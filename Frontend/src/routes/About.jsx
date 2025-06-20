@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "../Components/Navbar"
+import AboutData from "../Components/AboutData";
 
 function About(){
     return (
         <div>
-            <Navbar/>
-            <h1>About page</h1>
+            <AboutData/>
         </div>
     )
 }

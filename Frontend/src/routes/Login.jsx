@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import LoginData from "../Components/LoginData";
 
 function Login() {
     return (
         <>
-            <Navbar />
+            <LoginData/>
         </>
     )
 }
+
 export default Login;
