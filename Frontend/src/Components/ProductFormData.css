@@ -1,76 +1,90 @@
-.product-form {
-    border: solid 5px black;
-    padding: 10px;
-    width: 60%;
-    margin: 150px auto;
-    border-radius: 20px;
-    height: fit-content;
-    background-image: url("https://t4.ftcdn.net/jpg/02/32/16/07/360_F_232160763_FuTBWDd981tvYEJFXpFZtolm8l4ct0Nz.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.addproduct-image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
-.container {
+.product-form {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
-    gap: 20px;
-    cursor: pointer;
-    margin-left: 150px;
-
 }
 
 .product-heading {
     text-align: center;
-    font-weight: 700;
-    color: rgb(43, 81, 82);
+    color: palevioletred;
+    font-size: 40px;
 }
 
 .product-label {
-    font-weight: 500;
-    font-size: 23px;
-    padding-right: 10px;
+    font-size: 25px;
+}
 
+.container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
 }
 
 .product-input {
-    width: 50%;
-    height: 25px;
-    border-radius: 3px;
-    border: solid 2px gray;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .product-button {
-    width: 200px;
+    padding: 3px;
+    font-size: 18px;
+    background-color: palevioletred;
+    width: 40%;
     margin: auto;
-    border: solid 3px gray;
-    padding: 5px;
-    color: black;
-    font-weight: 500;
-    font-family: Georgia, serif;
-    font-size: 20px;
+    color: white;
 }
 
-.product-button:hover {
-    background-color: rgb(210, 209, 209);
+@media screen and (max-width: 900px) {
+    .product-form {
+        top: 130px;
+        left: 50px;
+    }
+
+    .product-label {
+        font-size: 20px;
+    }
+
+    .product-input {
+        padding: 3px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
 }
 
-.product-image {
-    border: none;
-    padding: 10px;
-}
+@media screen and (max-width: 470px) {
+    .container div {
+        display: flex;
+        flex-direction: column;
+    }
 
-#description {
-    border: solid 2px gray;
-    border-radius: 3px;
-    padding: 5px;
-}
+    .product-heading {
+        font-size: 35px;
+    }
 
-#delivery {
-    border: solid 2px gray;
-    padding: 5px;
-    width: 200px;
-    border-radius: 3px;
+    .product-form {
+        top: 90px;
+        left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        gap: 8px;
+    }
+
+    .product-button {
+        font-size: 15px;
+        width: 50%;
+    }
 }

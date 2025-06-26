@@ -25,11 +25,11 @@ function AboutData() {
 
             <div className="about-collection">
                 <h1 className="collection-h1">What You'll Find Here !</h1>
-                <h4 className="collection-h4">From everyday essentials to hidden gems, we offer a wide collection of</h4>
-                <div>
+                <h3 className="collection-h4">From everyday essentials to hidden gems, we offer a wide collection of</h3>
+                <div className="collection-card">
                     <AboutCollectionData name="Trendy Fashion & Accessories" image={image1} text="Step into style with our curated fashion collection for men, women, and kids. From casual streetwear to statement pieces, we bring you the latest trends, timeless classics, and must-have accessories – all at prices you’ll love." />
-                    <AboutCollectionData name=" Smart Electronics & Gadgets" image={image2} text="Upgrade your everyday with our range of cutting-edge electronics and smart gadgets. Whether it's the newest headphones, power banks, home automation devices, or mobile accessories – we've got the tech to keep you connected, productive, and entertained." />
-                    <AboutCollectionData name="Unique Gifts & Lifestyle Items" image={image3} text="Looking for something special? Discover quirky, thoughtful, and one-of-a-kind gifts perfect for every occasion – birthdays, anniversaries, or “just because.” Make every moment memorable with items that inspire smiles." />
+                    <AboutCollectionData  name=" Smart Electronics & Gadgets" image={image2} text="Upgrade your everyday with our range of cutting-edge electronics and smart gadgets. Whether it's the newest headphones, power banks, home automation devices, or mobile accessories – we've got the tech to keep you connected, productive, and entertained." />
+                    <AboutCollectionData  name="Unique Gifts & Lifestyle Items" image={image3} text="Looking for something special? Discover quirky, thoughtful, and one-of-a-kind gifts perfect for every occasion – birthdays, anniversaries, or “just because.” Make every moment memorable with items that inspire smiles." />
                 </div>
             </div>
 
